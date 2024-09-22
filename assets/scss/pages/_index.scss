@@ -1,0 +1,17 @@
+.banner-1 {
+  background-image: url(/assets/images/1x-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @include mobile {
+    background-position: right;
+    background-size: inherit;
+    max-height: 797px;
+  }
+}
+.mt-62 {
+  margin-top: 248px;
+}
+.display-3 {
+  font-family: "ChenYuluoyan-Thin-Monospaced";
+}

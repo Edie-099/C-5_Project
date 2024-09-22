@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-  </head>
-  <body>
 
-    <%- include('./layout/header'); -%>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>咖啡都是學 - 首頁</title>
+</head>
+
+<body>
+
+  <%- include('./layout/header'); -%>
+    <div class="banner-1">
+      <div class="container d-flex flex-column">
+        <div class="row">
+          <h2 class="col-12 ms-n3 mb-4 mt-6"><span
+              class="fs-2 fs-md-1 display-3 bg-primary-100 px-2 py-1">陪您清醒的風味</span>
+          </h2>
+          <h2 class="col-12 ms-n3"><span class="fs-2 display-3 bg-primary-100 ps-6 pe-2 py-1">選擇咖啡全是學</span>
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col mt-62 pt-5 pb-9">
+            <div class="text-center text-md-start">
+              <button type="button" class="btn btn-lg btn-secondary-500 px-lg-14 py-lg-4">點此選購</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-2">
+      <div class="container"></div>
+    </div>
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>
