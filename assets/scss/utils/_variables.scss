@@ -475,7 +475,9 @@ $spacers: (
   11: $spacer * 3.75,
   12: $spacer * 4,
   13: $spacer * 4.5,
-  14: $spacer * 5
+  14: $spacer * 5,
+  15: $spacer * 6.25,
+  16: $spacer * 7.5
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -497,7 +499,8 @@ $position-values: (
 
 $body-text-align: null !default;
 $body-color: $gray-900 !default;
-$body-bg: $white !default;
+// $body-bg: $white !default;
+$body-bg: $primary-100 !default;
 
 $body-secondary-color: rgba($body-color, 0.75) !default;
 $body-secondary-bg: $gray-200 !default;

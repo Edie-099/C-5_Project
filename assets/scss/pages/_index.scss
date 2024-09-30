@@ -12,6 +12,37 @@
 .mt-62 {
   margin-top: 248px;
 }
+.display-1 {
+  font-family: "ChenYuluoyan-Thin-Monospaced";
+  font-size: 32px;
+  @include mobile {
+    font-size: 64px;
+    line-height: 1.2;
+  }
+}
+.display-2 {
+  font-family: "ChenYuluoyan-Thin-Monospaced";
+  font-size: 24px;
+  @include mobile {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+}
 .display-3 {
   font-family: "ChenYuluoyan-Thin-Monospaced";
+  font-size: 24px;
+  @include mobile {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+}
+.btn-lg {
+  @include mobile {
+    border-radius: 16px;
+  }
+}
+.banner-2::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg, #310dff, #310dff);
 }

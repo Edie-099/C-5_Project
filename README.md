@@ -2,7 +2,14 @@
 
 ## C-5 咖啡全是學 電商網站
 
-- 野鴿
+- change log:
+  - 0930:
+    - 按鈕可以直接套 btn-lg（border-radius 8px），有自己刻行動以上是 16px。
+    - `_variables.scss` 修改了 $body-bg 調整成網頁背景色 $primary-100、新增  :15: $spacer _ 6.25,16: $spacer _ 7.5。
+  - 0922:
+    - 原本 logo 的 svn 圖檔有點問題（圖片空白範圍過大、要另外調整，打算之後頁面完成有空擋再處理），我目前使用設計師提供的 logo 檔案。
+    - 首頁 banner 的 display 文字無法透過斷點在行動版跟電腦版分開寫上。
+    - 行動版漢堡選單點擊後要全畫面要透過 offcanvas，目前還不太會，之後預計調整 。
 
 ## Node.js 版本
 
