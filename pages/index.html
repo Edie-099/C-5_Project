@@ -13,26 +13,35 @@
   <%- include('./layout/header'); -%>
     <section class="banner-1">
       <div class="container d-flex flex-column">
-        <div class="row">
+        <div class="row mt-lg-17">
           <h2 class="col-12 ms-n3 mb-4 mt-6"><span class="display-1 bg-primary-100 px-2 py-1">陪您清醒的風味</span>
           </h2>
           <h2 class="col-12 ms-n3"><span class="display-1 bg-primary-100 ps-6 pe-2 ps-md-16 py-1">選擇咖啡全是學</span>
           </h2>
         </div>
-        <div class="row">
-          <div class="col mt-62 pt-5 pb-9">
+        <div class="row d-none d-sm-block mt-lg-17">
+          <div class="col">
             <div class="text-center text-md-start">
-              <button type="button" class="btn btn-lg btn-secondary-500 px-lg-15 py-lg-4 fs-7 fs-md-4">點此選購</button>
+              <button type="button" class="btn btn-lg btn-secondary-500 py-4 px-9 px-lg-15 fs-7 fs-md-4">點此選購</button>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="container">
-      <div class="row py-6 text-center text-md-start">
+    <section class="container d-sm-none mt-5">
+      <div class="row d-sm-block">
+        <div class="">
+          <div class="text-center text-md-start">
+            <button type="button" class="btn btn-lg btn-secondary-500 py-4 px-9 px-lg-15 fs-7 fs-md-4">點此選購</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container mt-md-14 mt-9">
+      <div class="row text-center text-md-start">
         <div class="col-md-6 px-0 position-relative">
           <div class="banner-2">
-            <img src="../assets/images/1x-banner-02-L.png" alt="">
+            <img src="../assets/images/1x-banner-02-L.png" alt="caffee">
           </div>
         </div>
         <div class="col-md-6 mt-6 mt-md-0 py-md-13 px-md-9">
@@ -59,13 +68,71 @@
               讓靈魂呼吸片刻自由
             </p>
           </div>
-          <div class="col text-md-start mt-5">
-            <button type="button" class="btn btn-lg btn-secondary-500 px-lg-15 py-lg-4 fs-7 fs-md-4">點此了解</button>
+          <div class="col text-md-start mt-5 mb-6">
+            <button type="button" class="btn btn-lg btn-secondary-500 py-4 px-9 px-lg-15 fs-7 fs-md-4">點此了解</button>
           </div>
         </div>
     </section>
-    <section class="container">
-      <h5 class="h5 fs-md-2 mt-9 mt-md-14">熱銷商品</h5>
+    <section>
+      <div class="container">
+        <h5 class="h5 fs-md-2 mt-md-14 fw-bold">熱銷商品</h5>
+      </div>
+      <swiper-container class="mySwiper" navigation="true">
+        <swiper-slide>
+          <div class="card border-0">
+            <picture>
+              <source media="(min-width: 992px)" srcset="../assets/images/1x_product01-web.png">
+              <img src="../assets/images/1x_product01-mobile.png" class="card-img-top" alt="...">
+            </picture>
+            <div class="p-1 text-start">
+              <p class="card-text fs-9 text-neutral-300 fs-md-5 mt-md-2">Blue Java Full Washed Arabica / BlueJava Situ
+                Full
+                Washed
+              </p>
+              <h6 class="card-text fs-md-3 fw-bold">藍鑽爪哇全水洗阿拉比卡
+              </h6>
+              <p class="card-text fs-9 text-neutral-300 mt-1 mt-md-4 fs-md-5">風味就像……
+              </p>
+              <p class="card-text fs-9 text-primary-400 fs-md-5">果香甜、柳丁、醇度適中、尾韻乾淨
+              </p>
+              <p class="card-text fs-9 text-neutral-300 mt-1 mt-md-4 fs-md-5">全水洗處理｜<span
+                  class="text-primary-300">Specialty</span>
+              </p>
+              <h6 class="card-text text-secondary-600 mt-1 mt-md-4 fs-md-3">＄400
+              </h6>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card border-0">
+            <picture>
+              <source media="(min-width: 992px)" srcset="../assets/images/1x_product01-web.png">
+              <img src="../assets/images/1x_product01-mobile.png" class="card-img-top" alt="...">
+            </picture>
+            <div class="p-1 text-start">
+              <p class="card-text fs-9 text-neutral-300 fs-md-5 mt-md-2">Blue Java Full Washed Arabica / BlueJava Situ
+                Full
+                Washed
+              </p>
+              <h6 class="card-text fs-md-3 fw-bold">藍鑽爪哇全水洗阿拉比卡
+              </h6>
+              <p class="card-text fs-9 text-neutral-300 mt-1 mt-md-4 fs-md-5">風味就像……
+              </p>
+              <p class="card-text fs-9 text-primary-400 fs-md-5">果香甜、柳丁、醇度適中、尾韻乾淨
+              </p>
+              <p class="card-text fs-9 text-neutral-300 mt-1 mt-md-4 fs-md-5">全水洗處理｜<span
+                  class="text-primary-300">Specialty</span>
+              </p>
+              <h6 class="card-text text-secondary-600 mt-1 mt-md-4 fs-md-3">＄400
+              </h6>
+            </div>
+        </swiper-slide>
+        <swiper-slide>Slide 3</swiper-slide>
+      </swiper-container>
+    </section>
+
+    <section class="container d-md-none mt-9">
+      <h5 class="h5 fs-md-2 mt-md-14 fw-bold">熱銷商品</h5>
       <div class="row justify-content-center">
         <div class="col-lg-10 px-md-10">
           <div class="card border-0">
@@ -78,11 +145,11 @@
                 Full
                 Washed
               </p>
-              <h6 class="card-text fs-md-3">藍鑽爪哇全水洗阿拉比卡
+              <h6 class="card-text fs-md-3 fw-bold">藍鑽爪哇全水洗阿拉比卡
               </h6>
               <p class="card-text fs-9 text-neutral-300 mt-1 mt-md-4 fs-md-5">風味就像……
               </p>
-              <p class="card-text fs-9 text-primay-400 fs-md-5">果香甜、柳丁、醇度適中、尾韻乾淨
+              <p class="card-text fs-9 text-primary-400 fs-md-5">果香甜、柳丁、醇度適中、尾韻乾淨
               </p>
               <p class="card-text fs-9 text-neutral-300 mt-1 mt-md-4 fs-md-5">全水洗處理｜<span
                   class="text-primary-300">Specialty</span>
@@ -96,21 +163,19 @@
           <div class="card border-0">
             <picture>
               <source media="(min-width: 992px)" srcset="../assets/images/1x_product01-web.png">
-              <img src="../assets/images/1x_product01-mobile.png" class="card-img-top" alt="...">
+              <img src="../assets/images/1x_product02-mobile.png" class="card-img-top" alt="...">
             </picture>
             <div class="p-1">
-              <p class="card-text fs-9 text-neutral-300 fs-md-5 mt-md-2">Blue Java Full Washed Arabica / BlueJava Situ
-                Full
-                Washed
+              <p class="card-text fs-9 text-neutral-300 fs-md-5 mt-md-2">Toraja Super Sapan
               </p>
-              <h6 class="card-text fs-md-3">藍鑽爪哇全水洗阿拉比卡
+              <h6 class="card-text fs-md-3">托拉加高地薩本
               </h6>
               <p class="card-text fs-9 text-neutral-300 mt-1 mt-md-4 fs-md-5">風味就像……
               </p>
-              <p class="card-text fs-9 text-primay-400 fs-md-5">果香甜、柳丁、醇度適中、尾韻乾淨
+              <p class="card-text fs-9 text-primary-400 fs-md-5">玫瑰、甜辣辛香料、洛神花、鳳梨、鐵觀音、焦糖尾韻
               </p>
-              <p class="card-text fs-9 text-neutral-300 mt-1 mt-md-4 fs-md-5">全水洗處理｜<span
-                  class="text-primary-300">Specialty</span>
+              <p class="card-text fs-9 text-neutral-300 mt-1 mt-md-4 fs-md-5">半水洗處理｜<span
+                  class="text-primary-300">G1</span>
               </p>
               <h6 class="card-text text-secondary-600 mt-1 mt-md-4 fs-md-3">＄400
               </h6>
@@ -121,20 +186,18 @@
           <div class="card border-0">
             <picture>
               <source media="(min-width: 992px)" srcset="../assets/images/1x_product01-web.png">
-              <img src="../assets/images/1x_product01-mobile.png" class="card-img-top" alt="...">
+              <img src="../assets/images/1x_product03-mobile.png" class="card-img-top" alt="...">
             </picture>
             <div class="p-1">
-              <p class="card-text fs-9 text-neutral-300 fs-md-5 mt-md-2">Blue Java Full Washed Arabica / BlueJava Situ
-                Full
-                Washed
+              <p class="card-text fs-9 text-neutral-300 fs-md-5 mt-md-2">Blue Java Winey Arabica / Blue Java Situ Winey
               </p>
-              <h6 class="card-text fs-md-3">藍鑽爪哇全水洗阿拉比卡
+              <h6 class="card-text fs-md-3">藍鑽爪哇酒香阿拉比卡
               </h6>
               <p class="card-text fs-9 text-neutral-300 mt-1 mt-md-4 fs-md-5">風味就像……
               </p>
-              <p class="card-text fs-9 text-primay-400 fs-md-5">果香甜、柳丁、醇度適中、尾韻乾淨
+              <p class="card-text fs-9 text-primay-400 fs-md-5">酒香、莓果、甜感濃郁、尾韻甜
               </p>
-              <p class="card-text fs-9 text-neutral-300 mt-1 mt-md-4 fs-md-5">全水洗處理｜<span
+              <p class="card-text fs-9 text-neutral-300 mt-1 mt-md-4 fs-md-5">酒香日曬處理｜<span
                   class="text-primary-300">Specialty</span>
               </p>
               <h6 class="card-text text-secondary-600 mt-1 mt-md-4 fs-md-3">＄400
@@ -144,15 +207,15 @@
         </div>
         <div class="text-center">
           <div class="col text-md-start mt-5"></div>
-          <button type="button" class="btn btn-lg btn-secondary-500 px-lg-15 py-lg-4 fs-7 fs-md-4">查看全部商品</button>
+          <button type="button" class="btn btn-lg btn-secondary-500 py-4 px-9 px-lg-15 fs-7 fs-md-4">查看全部商品</button>
         </div>
       </div>
       </div>
       </div>
     </section>
-    <section class="container mt-9">
+    <section class="container d-none d-md-block mt-9">
+      <h5 class="h5 mt-9 fw-bold">最新消息</h5>
       <div class="row">
-
         <div class="col-4">
           <div class="list-group" id="list-tab" role="tablist">
             <a href="#list-news-1" class="list-group-item list-group-item-action active" id="list-news-1"
@@ -186,9 +249,75 @@
         </div>
       </div>
     </section>
+    <section class="container d-sm-none mb-6">
+      <h5 class="h5 mt-9 fw-bold">最新消息</h5>
+      <div class="mt-6">
+        <a href="#">
+          <p class="fs-7 fw-bold">新品上市-「赫爾摩高地」咖啡豆</p>
+          <p class="fs-9 text-neutral-300">我們誠摯向您介紹我們最新的咖啡豆——赫爾摩高地咖啡豆，來自壯闊高地...</p>
+        </a>
+      </div>
+      <div class="mt-3"></div>
+      <a href="#">
+        <p class="fs-7 fw-bold">熱銷商品補貨啦！</p>
+        <p class="fs-9 text-neutral-300">謝謝各位的捧場，前陣子售完的托拉加高地薩本已進貨，歡迎各位再...</p>
+      </a>
+      </div>
+      <div class="mt-3"></div>
+      <a href="#">
+        <p class="fs-7 fw-bold">「托拉加高地薩本」咖啡豆暫時完售</p>
+        <p class="fs-9 text-neutral-300">親愛的顧客們，感謝大家一直以來對我們的支持與厚愛！我們非常高...</p>
+      </a>
+      </div>
+      <div class="mt-3"></div>
+      <a href="#">
+        <p class="fs-7 fw-bold">特色商品得獎-托拉加高地薩本</p>
+        <p class="fs-9 text-neutral-300">我們非常興奮地與您分享一個好消息！我們的「托拉加高地薩本」...</p>
+      </a>
+      </div>
+      <div class="text-end">
+        <a href="#" class="fs-9 text-neutral-300 pb-1 news-all">查看全部</a>
+      </div>
+    </section>
+    <div class="container">
+      <row>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i
+            class="bi bi-shift text-secondary-600 fs-4"></i></button>
+      </row>
+    </div>
+
     <%- include('./layout/footer'); -%>
 
       <script type="module" src="../main.js"></script>
+      <script>
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction();
+        };
+
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 800 ||
+            document.documentElement.scrollTop > 800
+          ) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
 </body>
 
 </html>
