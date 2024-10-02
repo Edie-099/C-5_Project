@@ -41,8 +41,10 @@
   }
 }
 .cafe-logo {
-  background: url(/assets/svg/logo/logo-bgc.svg) no-repeat;
-  background-position: right center;
+  @include mobile {
+    background: url(/assets/svg/logo/logo-bgc.svg) no-repeat;
+    background-position: right center;
+  }
 }
 .banner-2 {
   &::before {
@@ -110,4 +112,15 @@ swiper-slide img {
 }
 .splide__slide {
   margin: 0 24px;
+}
+.splide__arrow {
+  height: 3.5rem;
+  width: 3.5rem;
+  border: 1px solid #3d464d;
+  opacity: 1;
+  background-color: #f4f6f7;
+  right: 20rem;
+}
+.splide__arrow--prev {
+  left: 20rem;
 }
