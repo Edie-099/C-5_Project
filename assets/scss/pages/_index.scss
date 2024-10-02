@@ -40,20 +40,26 @@
     border-radius: 16px;
   }
 }
-.banner-2::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    0deg,
-    #fffcf5,
-    transparent 100%,
-    #fffcf5,
-    transparent 80%
-  );
-  @include mobile {
-    display: none;
+.cafe-logo {
+  background: url(/assets/svg/logo/logo-bgc.svg) no-repeat;
+  background-position: right center;
+}
+.banner-2 {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      0deg,
+      #fffcf5,
+      transparent 100%,
+      #fffcf5,
+      transparent 80%
+    );
+    @include mobile {
+      display: none;
+    }
   }
 }
 .news-all {
@@ -65,11 +71,17 @@
   display: none;
   position: fixed;
   border: none;
-  bottom: 40px;
+  bottom: 64px;
   right: 12px;
   z-index: 99;
   background-color: rgba(201, 211, 216, 0.7);
   border-radius: 100rem;
+  @include mobile {
+    width: 96px;
+    height: 96px;
+    right: 392px;
+    bottom: 80px;
+  }
   &:hover {
     background-color: rgba(163, 184, 196, 0.7);
   }
@@ -91,4 +103,11 @@ swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.nav-link {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.splide__slide {
+  margin: 0 24px;
 }
