@@ -1360,15 +1360,23 @@ $navbar-dark-brand-hover-color: $navbar-dark-active-color !default;
 // Dropdown menu container and contents.
 
 // scss-docs-start dropdown-variables
-$dropdown-min-width: 10rem !default;
+// $dropdown-min-width: 10rem !default;
+// custom-dropdown-min-width
+$dropdown-min-width: 280px !default;
 $dropdown-padding-x: 0 !default;
 $dropdown-padding-y: 0.5rem !default;
 $dropdown-spacer: 0.125rem !default;
 $dropdown-font-size: $font-size-base !default;
 $dropdown-color: var(--#{$prefix}body-color) !default;
-$dropdown-bg: var(--#{$prefix}body-bg) !default;
-$dropdown-border-color: var(--#{$prefix}border-color-translucent) !default;
-$dropdown-border-radius: var(--#{$prefix}border-radius) !default;
+// $dropdown-bg: var(--#{$prefix}body-bg) !default;
+// custom-dropdown-bg
+$dropdown-bg: #FFFFFF !default;
+// $dropdown-border-color: var(--#{$prefix}border-color-translucent) !default;
+// custom-dropdown-border-color
+$dropdown-border-color: $secondary-600 !default; 
+// $dropdown-border-radius: var(--#{$prefix}border-radius) !default;
+// custom-dropdown-border-radius
+$dropdown-border-radius: 16px !default;
 $dropdown-border-width: var(--#{$prefix}border-width) !default;
 $dropdown-inner-border-radius: calc(
   #{$dropdown-border-radius} - #{$dropdown-border-width}

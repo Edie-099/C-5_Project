@@ -1,19 +1,97 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>products</title>
-  </head>
-  <body>
 
-    <%- include('./layout/header'); -%>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>咖啡都是學 - 商品個人頁</title>
+</head>
 
+<body>
 
+  <%- include('./layout/header'); -%>
+
+    <div class="container">
+
+      <nav class="fs-5"
+      style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+      aria-label="breadcrumb">
+      <ol class="breadcrumb mt-10 mb-6">
+        <li class="breadcrumb-item"><a class="link-secondary" href="./index.html">首頁</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a class="link-secondary" href="./collections.html">非洲</a>
+        </li>
+        <li class="breadcrumb-item text-neutral-500" aria-current="page">衣索比亞 / 瓦米納處理站 / 日曬 / 西達摩 / Heirloom原生種</li>
+      </ol>
+    </nav>
+
+      <div class="d-flex">
+
+        <img class="products-desc me-9" src="/assets/images/1x_product02-web.png" alt="products_img">
+
+        <div class="dropdown-group">
+
+          <h1 class="fs-3 fw-bold mb-4">衣索比亞 / 瓦米納處理站 / 日曬 / 西達摩 / Heirloom原生種</h1>
+          <p class="fw-bold mb-7"><span class="fs-2 text-primary-400">＄400</span><span class="text-secondary-400"> /
+              230g</span></p>
+          <p class="fs-5 text-secondary-400 mb-6">如果您想購買更多的咖啡豆 / 咖啡粉 / 濾掛式，請調整訂購數量。</p>
+
+          <div class="d-flex align-items-center ms-6 mb-6">
+            <p class="dropdown-title fs-4 fw-bold">咖啡豆</p>
+            <div class="dropdown dropdown-border-desc me-4">
+              <button class="btn dropdown-btn-desc dropdown-toggle fs-4 fw-bold" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                100 克
+              </button>
+              <ul class="dropdown-menu dropdown-menu-desc my-3" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item fs-4 fw-bold text-center" href="#">100 克</a></li>
+                <li><a class="dropdown-item fs-4 fw-bold text-center" href="#">200 克</a></li>
+                <li><a class="dropdown-item fs-4 fw-bold text-center" href="#">300 克</a></li>
+              </ul>
+            </div>
+            <a href="#"><i class="bi bi-cart3 order_buttom-desc" style="font-size: 24px;"></i></a>
+          </div>
+
+          <div class="d-flex align-items-center ms-6 mb-6">
+            <p class="dropdown-title fs-4 fw-bold">咖啡粉</p>
+            <div class="dropdown dropdown-border-desc me-4">
+              <button class="btn dropdown-btn-desc dropdown-toggle fs-4 fw-bold" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                100 克
+              </button>
+              <ul class="dropdown-menu dropdown-menu-desc my-3" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item fs-4 fw-bold text-center" href="#">100 克</a></li>
+                <li><a class="dropdown-item fs-4 fw-bold text-center" href="#">200 克</a></li>
+                <li><a class="dropdown-item fs-4 fw-bold text-center" href="#">300 克</a></li>
+              </ul>
+            </div>
+            <a href="#"><i class="bi bi-cart3 order_buttom-desc" style="font-size: 24px;"></i></a>
+          </div>
+
+          <div class="d-flex align-items-center ms-6 mb-6">
+            <p class="dropdown-title fs-4 fw-bold">濾掛式</p>
+            <div class="dropdown dropdown-border-desc me-4">
+              <button class="btn dropdown-btn-desc dropdown-toggle fs-4 fw-bold" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                一袋十入 <span class="fs-6 fw-bold">(100克)</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-desc my-3" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item fs-4 fw-bold text-center" href="#">一袋十入 <span class="fs-6 fw-bold">(100克)</span></a></li>
+                <li><a class="dropdown-item fs-4 fw-bold text-center" href="#">兩袋十入 <span class="fs-6 fw-bold">(200克)</span></a></li>
+                <li><a class="dropdown-item fs-4 fw-bold text-center" href="#">三袋十入 <span class="fs-6 fw-bold">(300克)</span></a></li>
+              </ul>
+            </div>
+            <a href="#"><i class="bi bi-cart3 order_buttom-desc" style="font-size: 24px;"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>
