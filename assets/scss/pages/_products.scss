@@ -1,30 +1,42 @@
-.products-desc {
+.products-image {
     width: 526px;
     margin: 51.45px 0;
 }
 
 .dropdown-title {
-margin-right: 56px;
+    margin-right: 56px;
 }
 
 .dropdown-border-desc {
-border: 1px solid $secondary-600;
-border-radius: 16px;
-padding: 5.5px 0;
+    border: 1px solid $secondary-600;
+    border-radius: 16px;
+    padding: 5.5px 0;
 }
 
 .dropdown-btn-desc {
-width: 280px;
-border: none;
+    width: 280px;
+    border: none;
 }
 
 .dropdown-menu-desc {
-overflow: hidden;
+    overflow: hidden;
 }
 
-.order_buttom-desc {
-background-color: $secondary-600;
-color: #FFFFFF;
-border-radius: 16px;
-padding: 10.5px 16px;
+.order-buttom-desc {
+    background-color: $secondary-600;
+    color: #FFFFFF;
+    border-radius: 16px;
+    padding: 10.5px 16px;
+}
+
+.product-desc {
+    color: $neutral-500;
+}
+
+.link-buttom-desc {
+    border-radius: $border-radius-xl;
+}
+
+.link-icon-desc {
+    font-size: 24px;
 }
