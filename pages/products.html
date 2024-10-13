@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>咖啡都是學 - 商品個人頁</title>
 </head>
 
@@ -12,7 +13,7 @@
 
   <%- include('./layout/header'); -%>
 
-    <div class="container">
+    <main class="container">
 
       <nav class="fs-5"
         style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708' fill='currentColor'/%3E%3C/svg%3E&#34;);"
@@ -25,9 +26,9 @@
         </ol>
       </nav>
 
-      <div class="d-flex">
+      <section class="d-flex">
 
-        <img class="products-image me-9" src="/assets/images/1x_product02-web.png" alt="products_img">
+        <img class="product-image me-9" src="/assets/images/1x_product02-web.png" alt="products_img">
 
         <div class="dropdown-group">
 
@@ -89,7 +90,7 @@
 
         </div>
 
-      </div>
+      </section>
 
       <div class="product-desc mb-7">
         <div class="fs-5 mb-6 px-4">
@@ -132,11 +133,121 @@
         </button>
       </div>
 
+      <div class="mb-7">
+        <h2 class="fw-bold">其他品項</h2>
+      </div>
+
+    </main>
+
+    <div class="swiper mb-14">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card swiper-card-desc border-0">
+            <img src="/assets/images/1x_product01-web.png" alt="product_img">
+            <p class="fs-9 text-neutral-300">Blue Java Winey Arabica / Blue Java Situ Winey</p>
+            <h3 class="fs-6 text-neutral-500 fw-bold mb-1">藍鑽爪哇酒香阿拉比卡</h3>
+            <p class="fs-9 text-neutral-300">風味就像……</p>
+            <p class="fs-8 text-primary-400 mb-1">酒香、莓果、甜感濃郁、尾韻甜</p>
+            <p class="fs-8 mb-1">酒香日曬處理｜<span class="text-primary-300">Specialty</span></p>
+            <p class="text-primary-600 fw-bold">＄400</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card swiper-card-desc border-0">
+            <img src="/assets/images/1x_product01-web.png" alt="product_img">
+            <p class="fs-9 text-neutral-300">Blue Java Winey Arabica / Blue Java Situ Winey</p>
+            <h3 class="fs-6 text-neutral-500 fw-bold mb-1">藍鑽爪哇酒香阿拉比卡</h3>
+            <p class="fs-9 text-neutral-300">風味就像……</p>
+            <p class="fs-8 text-primary-400 mb-1">酒香、莓果、甜感濃郁、尾韻甜</p>
+            <p class="fs-8 mb-1">酒香日曬處理｜<span class="text-primary-300">Specialty</span></p>
+            <p class="text-primary-600 fw-bold">＄400</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card swiper-card-desc border-0">
+            <img src="/assets/images/1x_product01-web.png" alt="product_img">
+            <p class="fs-9 text-neutral-300">Blue Java Winey Arabica / Blue Java Situ Winey</p>
+            <h3 class="fs-6 text-neutral-500 fw-bold mb-1">藍鑽爪哇酒香阿拉比卡</h3>
+            <p class="fs-9 text-neutral-300">風味就像……</p>
+            <p class="fs-8 text-primary-400 mb-1">酒香、莓果、甜感濃郁、尾韻甜</p>
+            <p class="fs-8 mb-1">酒香日曬處理｜<span class="text-primary-300">Specialty</span></p>
+            <p class="text-primary-600 fw-bold">＄400</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card swiper-card-desc border-0">
+            <img src="/assets/images/1x_product01-web.png" alt="product_img">
+            <p class="fs-9 text-neutral-300">Blue Java Winey Arabica / Blue Java Situ Winey</p>
+            <h3 class="fs-6 text-neutral-500 fw-bold mb-1">藍鑽爪哇酒香阿拉比卡</h3>
+            <p class="fs-9 text-neutral-300">風味就像……</p>
+            <p class="fs-8 text-primary-400 mb-1">酒香、莓果、甜感濃郁、尾韻甜</p>
+            <p class="fs-8 mb-1">酒香日曬處理｜<span class="text-primary-300">Specialty</span></p>
+            <p class="text-primary-600 fw-bold">＄400</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card swiper-card-desc border-0">
+            <img src="/assets/images/1x_product01-web.png" alt="product_img">
+            <p class="fs-9 text-neutral-300">Blue Java Winey Arabica / Blue Java Situ Winey</p>
+            <h3 class="fs-6 text-neutral-500 fw-bold mb-1">藍鑽爪哇酒香阿拉比卡</h3>
+            <p class="fs-9 text-neutral-300">風味就像……</p>
+            <p class="fs-8 text-primary-400 mb-1">酒香、莓果、甜感濃郁、尾韻甜</p>
+            <p class="fs-8 mb-1">酒香日曬處理｜<span class="text-primary-300">Specialty</span></p>
+            <p class="text-primary-600 fw-bold">＄400</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card swiper-card-desc border-0">
+            <img src="/assets/images/1x_product01-web.png" alt="product_img">
+            <p class="fs-9 text-neutral-300">Blue Java Winey Arabica / Blue Java Situ Winey</p>
+            <h3 class="fs-6 text-neutral-500 fw-bold mb-1">藍鑽爪哇酒香阿拉比卡</h3>
+            <p class="fs-9 text-neutral-300">風味就像……</p>
+            <p class="fs-8 text-primary-400 mb-1">酒香、莓果、甜感濃郁、尾韻甜</p>
+            <p class="fs-8 mb-1">酒香日曬處理｜<span class="text-primary-300">Specialty</span></p>
+            <p class="text-primary-600 fw-bold">＄400</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card swiper-card-desc border-0">
+            <img src="/assets/images/1x_product01-web.png" alt="product_img">
+            <p class="fs-9 text-neutral-300">Blue Java Winey Arabica / Blue Java Situ Winey</p>
+            <h3 class="fs-6 text-neutral-500 fw-bold mb-1">藍鑽爪哇酒香阿拉比卡</h3>
+            <p class="fs-9 text-neutral-300">風味就像……</p>
+            <p class="fs-8 text-primary-400 mb-1">酒香、莓果、甜感濃郁、尾韻甜</p>
+            <p class="fs-8 mb-1">酒香日曬處理｜<span class="text-primary-300">Specialty</span></p>
+            <p class="text-primary-600 fw-bold">＄400</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev swiper-button-prev-desc">
+        <span class="material-symbols-outlined swiper-button-prev-item-desc fw-bold border border-1 border-secondary-500 rounded-circle">
+          chevron_left
+          </span>
+      </div>
+      <div class="swiper-button-next swiper-button-next-desc">
+        <span class="material-symbols-outlined swiper-button-next-item-desc fw-bold border border-1 border-secondary-500 rounded-circle">
+          chevron_right
+          </span>
+      </div>
     </div>
 
     <%- include('./layout/footer'); -%>
 
       <script type="module" src="../main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <script>
+        const swiper = new Swiper('.swiper', {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          slidesPerView: 5,
+          spaceBetween: 24,
+          loop: true
+        });
+      </script>
+
 </body>
 
 </html>
