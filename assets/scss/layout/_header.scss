@@ -7,3 +7,9 @@
 #search-cafe {
   border: 1px solid #a4b4bc;
 }
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    height: 100vh;
+  }
+}
