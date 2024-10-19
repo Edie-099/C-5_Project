@@ -27,6 +27,11 @@
     color: #FFFFFF;
     border-radius: 16px;
     padding: 10.5px 16px;
+    transition: 0.15s
+}
+
+.order-buttom-desc:hover {
+    background-color: $secondary-400;
 }
 
 .product-desc {
