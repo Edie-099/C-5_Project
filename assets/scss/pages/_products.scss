@@ -1,33 +1,57 @@
 .product-image {
     width: 526px;
-    margin: 51.45px 0;
+    @include mobile-large {
+        margin-top: 51.45px;
+        margin-bottom: 51.45px;
+    }
 }
 
 .dropdown-title {
-    margin-right: 56px;
+    @include mobile-large {
+        margin-right: 56px;
+    }
 }
 
 .dropdown-border-desc {
+    width: 288px;
     border: 1px solid $secondary-600;
-    border-radius: 16px;
+    border-radius: 8px;
     padding: 5.5px 0;
+    @include mobile-large {
+        border-radius: 16px;
+    }
 }
 
 .dropdown-btn-desc {
-    width: 280px;
+    width: 288px;
     border: none;
+    @include mobile-large {
+        width: 280px;
+    }
 }
 
 .dropdown-menu-desc {
     overflow: hidden;
+    width: 288px;
+    border-radius: 4px;
+    @include mobile-large {
+        border-radius: 16px;
+    }
+
 }
 
 .order-buttom-desc {
     background-color: $secondary-600;
     color: #FFFFFF;
-    border-radius: 16px;
-    padding: 10.5px 16px;
-    transition: 0.15s
+    font-size: 22px;
+    border-radius: 4px;
+    padding: 8px 13px;
+    transition: 0.15s;
+    @include mobile-large {
+        font-size: 24px;
+        border-radius: 16px;
+        padding: 10.5px 16px;
+    }
 }
 
 .order-buttom-desc:hover {
@@ -36,6 +60,14 @@
 
 .product-desc {
     color: $neutral-500;
+}
+
+.link-list-top {
+    display: none;
+
+    @include mobile-large{
+        display: block;
+    }
 }
 
 .link-buttom-desc {
@@ -47,6 +79,10 @@
 }
 
 .swiper {
+    display: none;
+
+    @include mobile-large {
+    display:block ;
     max-width: 100%;
     height: 100%;
     margin-left: 147px;
@@ -90,4 +126,35 @@
         color: $secondary-500;
         padding: 15px;
     }
+}
+}
+
+.swiper-mobile-desc {
+    @include mobile-large {
+        display: none;
+    }
+}
+
+.carousel-button-prev-item-desc {
+    background-color: $secondary-100;
+    color: $neutral-500;
+    padding: 9px;
+    margin-left: 12px;
+}
+
+.carousel-button-next-item-desc {
+    background-color: $secondary-100;
+    color: $neutral-500;
+    padding: 9px;
+    margin-right: 12px;
+}
+
+.link-list-bottom {
+    @include mobile-large {
+        display: none;
+    }
+}
+
+.link-list-bottom-desc {
+    border-radius: 4px;
 }
